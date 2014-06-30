@@ -1,7 +1,13 @@
 language: c
  
-install:
-  - sudo apt-get install mono-devel=3.2.8 mono-gmcs=3.2.8
- 
+before_install:
+  - sudo apt-get update -qq > /dev/null
+  - sudo apt-get install -qq mono-devel mono-gmcs > /dev/null
+  - mozroots --import --sync
+  - mv -f .nuget/NuGet.mono.targets .nuget/NuGet.targets
+  - export EnableNuGetPackageRestore=true
+
+
 script:
-  - xbuild CI.proj
+  - xbuild TestTravis.sln
+
