@@ -1,4 +1,4 @@
-objective-c
+language: objective-c
  
 before_install:
  # Make sure mono is installed,
