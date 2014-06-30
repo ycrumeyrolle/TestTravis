@@ -1,7 +1,7 @@
 language: c
  
 install:
-  - sudo apt-get install mono-devel=3.2.3 mono-gmcs=3.2.3
+  - sudo apt-get install mono-devel=3.2.8 mono-gmcs=3.2.8
  
 script:
   - xbuild CI.proj
