@@ -11,8 +11,5 @@ before_install:
  - sudo installer -pkg "MonoFramework-MDK-3.4.0.macos10.xamarin.x86.pkg" -target /
 
 script:
- - xbuild 
-
-script:
   - xbuild TestTravis.sln
 
