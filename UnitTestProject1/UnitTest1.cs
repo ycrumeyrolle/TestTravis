@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Xunit;
+﻿using Xunit;
 
 namespace UnitTestProject1
 {
